@@ -1,0 +1,123 @@
+.search-results {
+    border-bottom: 1px solid #eee;
+}
+
+.product {
+    position: relative;
+    padding: 20px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 4px;
+}
+
+.product-wrapper {
+    padding: 20px;
+}
+
+.product:before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 50%);
+}
+
+.continue-action {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.continue-action img {
+    width: 20px;
+    height: 20px;
+}
+
+.continue-action span {
+    color: #fff;
+}
+
+.product .desc {
+    color: #fff;
+    padding: 16px 0;
+    position: relative;
+}
+
+.product .product-name {
+    color: #FFF;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    border-bottom: 1px solid;
+    position: relative;
+}
+
+.product .counter {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    color: #fff;
+
+}
+
+.product .counter span {
+    display: inline-block;
+    padding: 6px 10px;
+    border: 1px solid #fff;
+    border-radius: 2px;
+}
+
+/*****************/
+.product-1 {
+    background: url("../images/volt-nike-kobe-ad-nxt.jpg");
+}
+
+.product-2 {
+    background: url("../images/3b49a018368740be9d603b784d68b75a.jpg");
+}
+
+.product-3 {
+    background: url("../images/fb500082510c87f1a37097605b0b1929.jpg");
+}
+
+.product-4 {
+    background: url("../images/06245d854020d32b9d6f5e6ff97a8f37.jpg");
+}
+
+.product-5 {
+    background: url("../images/2b1770a7b2bac5c2f09226f54fe7c8fe.jpg");
+}
+
+.product-6 {
+    background: url("../images/2f06fe5e6b0af2353765ebd19a43dde2.jpg");
+}
+
+/******************/
+@media (min-width: 500px) {
+
+    .products::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    .product-wrapper {
+        width: 50%;
+        float: left;
+    }
+
+}
+
+@media (min-width: 700px) {
+    .product-wrapper {
+        width: 33.333%;
+
+    }
+}

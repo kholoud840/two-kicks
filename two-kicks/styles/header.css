@@ -1,0 +1,86 @@
+.header-wrapper{
+    background: #1d1d1d;
+    background-image: linear-gradient(to right, #3ccc6b , #e8e438 , #d69f09,
+    #cc225c , #f51513 );
+    background-size: 100% 3px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    display: flex;
+    justify-content: center;
+}
+.header-wrapper .title {
+    color: #bdbdbd;
+    padding: 20px;
+    font-size: 1em;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.header-wrapper .title span{
+    color: #fff;
+    font-weight: 600;
+}
+/****sub-header****/
+.sub-header-wrapper{
+    background: #292929;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-header .categories{
+    text-align: center;
+}
+.sub-header .categories li{
+    padding-left: 10px;
+}
+.sub-header .categories li a{
+    color: #bababa;
+    padding: 16px;
+    font-size: 0.8em;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.sub-header .categories a.active{
+   color: #fff;
+    border-bottom: 3px solid #cc2809;
+}
+/******search*****/
+.search-box{
+    padding: 6px;
+}
+.search-box label{
+    display:none;
+}
+.search-box input[type=search] {
+    color: transparent;
+    cursor: pointer;
+    outline: none;
+    background: url(../images/magnifying-glass.png) no-repeat 12px center;
+    background-size: contain;
+    //border: solid 1px #ccc;
+    border:none;
+    height: 20px;
+    padding:  10px 32px;
+    border-radius: 10em;
+    transition: width .5s;
+    width: 10px;
+}
+
+
+.search-box  input[type=search]:focus {
+    width: 130px;
+    padding-left: 32px;
+    background-color: #000;
+}
+
+@media (min-width: 500px){
+    .sub-header .categories li{
+        display: inline;
+    }
+    .sub-header-wrapper{
+        flex-direction: row;
+    }
+}
