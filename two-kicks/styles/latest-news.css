@@ -82,7 +82,7 @@
 
 }
 
-.search-pagination .pages span {
+.search-pagination .pages span ,.search-pagination .pages a{
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -90,7 +90,7 @@
     line-height: 16px;
 }
 
-.search-pagination .pages span.selected {
+.search-pagination .pages a.selected {
     background: #000;
     //box-shadow: 1px 1px 8px 2px rgba(0, 0, 0, 0.3);
     color: #b9bed1;
