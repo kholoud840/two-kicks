@@ -10,6 +10,7 @@
     flex-direction: column;
     justify-content: space-between;
     border-radius: 4px;
+    overflow: hidden;
 }
 
 .product-wrapper {
@@ -29,20 +30,17 @@
 
 .continue-action {
     position: relative;
-    display: flex;
+    display: block;
     align-items: center;
-    justify-content: space-between;
     padding: 10px;
     border-radius: 2px;
-}
-
-.continue-action img {
-    width: 20px;
-    height: 20px;
-}
-
-.continue-action span {
     color: #fff;
+
+    background-image: url("../images/right-arrow.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center right 16px;
+    background-size: 20px 20px;
 }
 
 .product .desc {
@@ -60,8 +58,7 @@
 }
 
 .product .counter {
-    display: flex;
-    flex-direction: row-reverse;
+    text-align: right;
     position: relative;
     color: #fff;
 
@@ -72,6 +69,7 @@
     padding: 6px 10px;
     border: 1px solid #fff;
     border-radius: 2px;
+    background: rgba(0, 0, 0, 0.41);
 }
 
 /*****************/

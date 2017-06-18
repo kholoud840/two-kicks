@@ -2,8 +2,13 @@
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('../images/OG CORTEZ 45TH ANNIVERSARY MENS DT.jpg');
     background-size: cover;
-    min-height: 500px;
+    min-height: 250px;
     background-position: center;
+}
+@media (min-width:500px) {
+   .hero{
+       min-height: 500px;
+   }
 }
 .hero {
     display: flex;

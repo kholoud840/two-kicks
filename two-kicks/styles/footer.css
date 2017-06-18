@@ -1,10 +1,19 @@
 .footer-wrapper{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     border-top: 1px solid #eee;
     padding: 30px 0;
+    align-items: center;
 }
-
+.social-media{
+    padding: 30px 0;
+}
+@media(min-width: 500px){
+    .footer-wrapper{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
 .social-media li,.footer-links li{
     display: inline;
     margin-right: 16px;
