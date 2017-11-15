@@ -2,4 +2,4 @@
 
 ## HTML/CSS Result
 
-![](images/frame-generic%20(3).png)
+![](images/frame-generic.png)
